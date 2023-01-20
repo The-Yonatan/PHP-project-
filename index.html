@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="UTF-8">
-  <!--Author:Yonatan Asfaw,000456789-->
-  <title>Nectarine</title>
-  
- </head>
- <body>
-    <h1>Nectarinerine</h1>
-	   <img src="nectarine_red.jpg">
-    <h2>Description</h2>
-	    <p>Nectarine is a varity of peach.Peaches and nectarines are the same species even thogh they are sold commercially as different fruits.The species name <em>persica</em> refers to it's original location in persia.It was moves from there to Europe.A domesticated peach appeared in Japan in 4700-4400 BC.It appeared in India by 1700 BC and in Greece by 300Bc.Some sources claim that Alexander the great introduced the peach to Europe.(source:Wikipedia<sup>1</sup>)</p>
-	<h2>Nutrition information for 1 small nectarine, 2&#8531inches in diameter(partial list)</h2>
-	 <p><em>per 129<sub>g</sub>(4.55<sub>oz</sub>)</em>
-	   <ul>
-	    <li><strong>Energy:57 calories</li>
-		<li><strong>Carbohydrates:14<sub>g</sub>
-		    <ul>
-			  <li>Dietary Fiber:2.2<Sub>g</sub></li>
-			  <li>Sugar:10<sub>g</sub></li>
-			</ul>
-		</li>	
-	    <li>Fat:0.4<sub>g</sub></li>
-		<li>protein:1.4<sub>g</sub></li>
-		<li>Vitamins
-		     <ul>
-			    <li>Vitamin A equiv.:332<sub>&microg</sub></li>
-				<li>Thiamine(B<sub>1</sub>):0.034<sub>&microg</sub></li>
-				<li>Riboflavin(B<sub>2</sub>):0.027<sub>&microg</sub></li>
-				<li>Vitamin C:5.4<sub>&microg</sub></li>
-			 </ul>
-		<li>Minerals</li>
-		    <ul>
-			    <li>Calcium:6<sub>&microg</sub></li>
-				<li>iron:0.28<sub>&microg</sub></li>
-				<li>Zinc:0.17<sub>&microg</sub></li>
-			</ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+<style>
+ body{
+    display: grid;
+    grid-template-columns: auto 600px 600px;
+    background-color: black;
+ }
+ h1{
+    color:azure;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+    padding: 70px 0;
+    border-bottom: 5px solid brown;
+ }
+ #profile{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+ }
+ nav{
+    grid-column: 1 / span 1;
+    color:azure;
+    font-size: 30px;
+ }
+ nav{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+ }
 
-      </ul>
-	<p><small><sup>1</sup>Wikipedia content can be edited by the general public</p>
+</style>
+</head>
+<body>
+    <div id ="profile">
+        <img src="profile.jpg" alt="yonatan">
+    </div>
+    <h1>Yonatan Asfaw</h1>
+    <nav>
+        <ul>
+            <li>Resume</li>
+            <li>Projects</li>
+            <li>Current</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    </div>
+
+
 </body>
 </html>
