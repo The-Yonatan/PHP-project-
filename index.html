@@ -1,43 +1,132 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="UTF-8">
-  <!--Author:Yonatan Asfaw,000456789-->
-  <title>Nectarine</title>
-  
- </head>
- <body>
-    <h1>Nectarinerine</h1>
-	   <img src="nectarine_red.jpg">
-    <h2>Description</h2>
-	    <p>Nectarine is a varity of peach.Peaches and nectarines are the same species even thogh they are sold commercially as different fruits.The species name <em>persica</em> refers to it's original location in persia.It was moves from there to Europe.A domesticated peach appeared in Japan in 4700-4400 BC.It appeared in India by 1700 BC and in Greece by 300Bc.Some sources claim that Alexander the great introduced the peach to Europe.(source:Wikipedia<sup>1</sup>)</p>
-	<h2>Nutrition information for 1 small nectarine, 2&#8531inches in diameter(partial list)</h2>
-	 <p><em>per 129<sub>g</sub>(4.55<sub>oz</sub>)</em>
-	   <ul>
-	    <li><strong>Energy:57 calories</li>
-		<li><strong>Carbohydrates:14<sub>g</sub>
-		    <ul>
-			  <li>Dietary Fiber:2.2<Sub>g</sub></li>
-			  <li>Sugar:10<sub>g</sub></li>
-			</ul>
-		</li>	
-	    <li>Fat:0.4<sub>g</sub></li>
-		<li>protein:1.4<sub>g</sub></li>
-		<li>Vitamins
-		     <ul>
-			    <li>Vitamin A equiv.:332<sub>&microg</sub></li>
-				<li>Thiamine(B<sub>1</sub>):0.034<sub>&microg</sub></li>
-				<li>Riboflavin(B<sub>2</sub>):0.027<sub>&microg</sub></li>
-				<li>Vitamin C:5.4<sub>&microg</sub></li>
-			 </ul>
-		<li>Minerals</li>
-		    <ul>
-			    <li>Calcium:6<sub>&microg</sub></li>
-				<li>iron:0.28<sub>&microg</sub></li>
-				<li>Zinc:0.17<sub>&microg</sub></li>
-			</ul>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<title>Document</title>
+	<style>
+		body{
+			display: grid;
+			grid-template-columns: 350px auto auto;
+			grid-template-rows: auto;
+			background-color: black;
+			padding-left: 200px;
+			padding-right: 200px;
+		}
+		h1{
+			color:slategrey;
+			grid-column:2 / span 2 ;
+			grid-row: 1 / span 1;
+			font-size: 50px;
+			border-bottom: solid 10px brown;
+			text-align: center;
+		}
+		img{
+			grid-column:1 / span 1 ;
+			grid-row: 1 / span 1;
 
-      </ul>
-	<p><small><sup>1</sup>Wikipedia content can be edited by the general public</p>
+		}
+		.navbar {
+			grid-column:1 / span 1 ;
+			grid-row: 2 ;
+ 			height: 100%;
+			width: 330px;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+		.movie{
+			grid-column:2 / span 2 ;
+			grid-row: 2 ;
+
+		}
+		.popover{
+  background-color: #f8f9fa;
+  color: black;
+}
+
+	.navbar a {
+		padding: 6px 8px 6px 16px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+	}
+
+	.navbar a:hover {
+		color: #f1f1f1;
+	}
+
+	</style>
+</head>
+<body>
+	<img src="pholder1.jpg">
+	<h1>John Something</h1>
+	<div class="navbar">
+		<ul>
+		<li><a href="#">Home</a></li>
+		<a href="#">Resume</a></li>
+		<a href="#">about</a></li>
+		<a href="#">Contact</a></li>
+		</ul>
+	</div>
+	<div class="movie">
+	<section class="container-fluid slider">
+		<!---<img src="profile.jpg" class="popover-image" data-toggle="popover" data-content="Your popover content here" title="Your title">-->
+		<p class="text-white"><b>Movie Suggestions</b></p>
+		<div class="carousel-indicators ">
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+
+		<div id="carouselExampleCaptions" class="carousel slide">
+			
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="..." class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>First slide label</h5>
+				  <p>Some representative placeholder content for the first slide.</p>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="..." class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>Second slide label</h5>
+				  <p>Some representative placeholder content for the second slide.</p>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="..." class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>Third slide label</h5>
+				  <p>Some representative placeholder content for the third slide.</p>
+				</div>
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+
+
+
+
+
+
+	</section>
+	</div>
+
+	
 </body>
 </html>
