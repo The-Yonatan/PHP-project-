@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ReactJS</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <style>
+    .myclass {
+    color: rgb(30, 0, 255);
+    }
+  </style>
+</head>
+    <body>
+        <div id="container1"></div>
+        <div id="container2"></div>
+        <div id="container3"></div>
+         <div id="container4"></div>
+        <div id="container5"></div>
+        <div id="container6"></div>
+         <div id="container7"></div>
+        <div id="container8"></div>
+        <div id="container9"></div>
+    </body>
+
+    <script type="text/babel">
+
+        //Use JSX to create <h1> element, put it in the body tag
+            ReactDOM.render(
+                <h1>Hello, World</h1>, document.querySelector("#container1")
+            )
+
+        //Store the H2 inside a variable, myJSX
+            var myJSX = <h2>This JSX is stored in a variable!</h2>
+            ReactDOM.render( 
+                myJSX,
+                document.querySelector("#container2")
+            )
+
+        //JSX elements can be nested within JSX elements, and 
+        //have attributes
+        var myJSX2 = <a href="http://www.google.com" target="_blank"><h3>Go to Google!</h3></a>
+        </script>
+        </html>
